@@ -1,5 +1,6 @@
-var ffmpeg = require('fluent-ffmpeg');
-// var command = ffmpeg();
+const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
+const ffmpeg = require('fluent-ffmpeg');
+ffmpeg.setFfmpegPath(ffmpegPath);
 exports.handler = async event => {
   try {
     ffmpeg()
