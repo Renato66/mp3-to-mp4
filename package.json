@@ -1,0 +1,18 @@
+{
+  "name": "mp3-to-mp4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node -r dotenv/config test.js",
+    "zip": "zip -r build.zip index.js node_modules src"
+  },
+  "author": "Renato66",
+  "license": "ISC",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
